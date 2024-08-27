@@ -1,0 +1,96 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+}
+h2, h3 {
+    padding: 1em 0 .5em;
+}
+p {
+    padding-bottom: 1em;
+}
+.products-container{
+    width: 100%;
+    max-width: 55em;
+    padding: 2em;
+}
+.cart-container {
+    display: flex;
+    justify-content: space-between; /* إضافة مساحة بين السلة والدفع */
+    align-items: flex-start; /* محاذاة العناصر إلى الأعلى */
+}
+.checkout-container {
+    max-width: 34em;
+    padding: 2em;
+    background: #efefef;
+}
+.products, .cart{
+  display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.products > div {
+    background: #f7f7f7;
+    margin: 1em;
+    padding: 2em;
+    text-align: center;
+    
+}
+
+.products > div img {
+    max-width: 100px;
+    height: auto;
+}
+
+.products > div h3 {
+    font-weight: 800;
+}
+
+.cart > div {
+    border: 1px solid #ccc;
+    padding: 2em; /* تقليل الهوامش الداخلية */
+    width: 190px; /* تحديد عرض أقل للبطاقة */
+    
+    margin: 5px;
+}
+.checkout-container {
+    max-width: 34em;
+    flex: 1; /* الدفع يأخذ ثلث المساحة */
+    margin-left: 2em; /* إضافة هامش بين السلة والدفع */
+    background: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.checkout {
+    margin-bottom: 4em;
+}
+
+button {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 1em;
+    transition: .2s ease all;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+button.pay {
+    background: #f5f5f5;
+    vertical-align: middle
+}
+button:hover {
+    background: rgb(93, 120, 118);
+    color: #fff;
+    cursor: pointer;
+}
+
+.received {
+    font-size: 1.5em;
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    vertical-align: middle
+}
